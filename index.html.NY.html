@@ -1,0 +1,62 @@
+< !DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Favorite Song</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>My Favorite Song</h1>
+        <p>Enjoy this awesome track from one of my favorite artists!</p>
+
+        <!-- Embedded YouTube video -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div id="box"></div>
+
+        <script src="script.js"></script>
+    </body>
+
+    </html>
+
+    body {
+    background-color: #f0f8ff;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    }
+
+    h1 {
+    color: #2c3e50;
+    }
+
+    .video-container {
+    margin: 20px auto;
+    }
+
+    #box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 30px auto;
+    border-radius: 10px;
+    position: relative;
+    }
+    // Simple animation to move the box left and right
+    let box = document.getElementById("box");
+    let position = 0;
+    let direction = 1;
+
+    function animateBox() {
+    if (position > 200 || position < 0) { direction *=-1; // reverse direction } position +=2 * direction;
+        box.style.transform=`translateX(${position}px)`; requestAnimationFrame(animateBox); } animateBox();
