@@ -1,0 +1,29 @@
+﻿/* Page styling */
+using System;
+using System.ComponentModel;
+using static System.Net.Mime.MediaTypeNames;
+
+body {
+    font-family: Arial, sans-serif;
+text - align: center;
+background - color: #f0f8ff;
+    color: #333;
+}
+
+h1 {
+    color: #ff4500;
+}
+
+/* Video container */
+.video - container {
+margin: 20px auto;
+}
+
+/* Animated box */
+# box {
+width: 100px;
+height: 100px;
+background - color: #ff69b4;
+    margin: 20px auto;
+border - radius: 10px;
+}
