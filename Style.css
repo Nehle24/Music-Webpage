@@ -1,29 +1,28 @@
-﻿/* Page styling */
-using System;
-using System.ComponentModel;
-using static System.Net.Mime.MediaTypeNames;
-
+/* Page styling */
 body {
     font-family: Arial, sans-serif;
-text - align: center;
-background - color: #f0f8ff;
+    text-align: center;
+    background-color: #f0f8ff; /* Light blue background */
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    color: #ff4500;
+    color: #ff4500; /* Orange heading */
+    margin-top: 20px;
 }
 
 /* Video container */
-.video - container {
-margin: 20px auto;
+.video-container {
+    margin: 20px auto;
 }
 
 /* Animated box */
-# box {
-width: 100px;
-height: 100px;
-background - color: #ff69b4;
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff69b4; /* Pink box */
     margin: 20px auto;
-border - radius: 10px;
+    border-radius: 10px;
 }
